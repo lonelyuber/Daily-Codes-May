@@ -6,10 +6,12 @@ using namespace std;
 
 int main() {
 
-	int array[10];
 	srand(time(NULL));
-	array[10] = rand() % 4 + 1;
+	int array[10];
 
-	cout << array[10] << endl;
+	for (int i = 0; i < 10; i++) {
+		array[i] = rand() % 4 + 1;
+		cout << array[i] << endl;
+	}
 
 }
